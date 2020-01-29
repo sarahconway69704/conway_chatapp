@@ -24,7 +24,7 @@ io.on('connection', function(socket){
     console.log('a user has connected');
     socket.emit('connected', {sID: socket.id, message: "new connection" });
 
-    socket.on('chat_message', function(msg){
+    socket.on("chat_message", function(msg){
         console.log(msg);
 
         //tell the connection manager (socket.io) to send this message to everyone
