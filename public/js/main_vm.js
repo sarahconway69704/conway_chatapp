@@ -1,7 +1,14 @@
 // imports always go first - if we're importing anything
 import ChatMessage from "./modules/ChatMessage.js";
+import agegate from "./modules/agegate.js";
 
 const socket = io();
+
+  
+    Vue.component("modal", {
+        template: "#modal-template"
+      });
+
 
 // the packet is whatever data we send through with the connect event 
 // from the server 
@@ -21,11 +28,12 @@ function appendMessage(message){
     vm.messages.push(message);
 }
 
+
 const vm = new Vue({
     data: {
         socketID: "",
         message: "",
-        nickename: "",
+        nickname: "",
         messages: []
     }, 
 
@@ -37,12 +45,15 @@ const vm = new Vue({
             //the double pipe || is an "or " operator
             // if the first value is set, use it, else use
             //whatever comes after the or operator
-            socket.emit('chat_message', {
+           if (socket.emit('chat_message', {
                 content: this.message, 
                 name: this.nickname || "anonymous"
-            })
-
+            })){
+            this.nickname = "";
             this.message = "";
+        } else if (this.nickname == null && this.message == null) {
+            console.log("can't be blank");
+        }
         }
     },
 
@@ -51,7 +62,8 @@ const vm = new Vue({
     },
 
         components: {
-            newmessage: ChatMessage
+            newmessage: ChatMessage,
+            agegates: agegate
         }
 
 }).$mount("#app");
