@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  font: 16px Helvetica, Arial;
+  font-family: "Baloo Chettan 2", cursive;
 }
 
 main {
@@ -53,6 +53,12 @@ input, textarea {
   border-radius: 5px;
 }
 
+#chet {
+  font-size: 40px;
+  color: white;
+  padding-bottom: 40px;
+}
+
 textarea {
   height: 135px;
 }
@@ -64,12 +70,18 @@ form {
 form input[type=submit] {
   width: auto;
   padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #63FFD4;
   margin-top: 1rem;
   border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "Baloo Chettan 2", cursive;
+}
+form input[type=submit]:hover {
+  background-color: #6384FF;
+  color: #63FFD4;
 }
 
 #messages {
@@ -118,15 +130,57 @@ form input[type=submit] {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #CBA4EB;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 80%;
 }
 
 .nope {
   display: none;
+}
+
+#eighteen {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+#yes {
+  padding: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 30px;
+  font-family: "Baloo Chettan 2", cursive;
+  border-radius: 10px;
+  background-color: #E4DAFB;
+  color: #6384FF;
+  margin-left: 40px;
+  border: none;
+}
+
+#no {
+  padding: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 30px;
+  font-family: "Baloo Chettan 2", cursive;
+  border-radius: 10px;
+  background-color: #E4DAFB;
+  color: #6384FF;
+  border: none;
+}
+
+#yes:hover {
+  background-color: #6384FF;
+  color: #E4DAFB;
+}
+
+#no:hover {
+  background-color: #6384FF;
+  color: #E4DAFB;
 }
 
 /*# sourceMappingURL=main.css.map */

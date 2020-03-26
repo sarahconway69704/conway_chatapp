@@ -5,7 +5,10 @@
 
 html, body { height: 100%; }
 
-body { font: 16px Helvetica, Arial; }
+body { 
+	font-family: 'Baloo Chettan 2', cursive;
+
+ }
 
 main { 
 	display: flex;
@@ -46,6 +49,14 @@ input, textarea {
 
 }
 
+#chet
+{
+	font-size: 40px;
+	color: white;
+	padding-bottom: 40px;
+	
+}
+
 textarea { height: 135px; }
 
 
@@ -58,12 +69,19 @@ form {
 	input[type=submit] { 
 		width: auto; 
 		padding: 10px; 
+		padding-left: 40px;
+		padding-right: 40px;
 		background-color: #63FFD4;
 		margin-top: 1rem; 
 		border-radius: 8px;
 		cursor: pointer;
 		text-transform: uppercase;
-		font-weight: bold;
+		font-family: 'Baloo Chettan 2', cursive;
+	}
+
+	input[type=submit]:hover{
+		background-color: #6384FF;
+		color: #63FFD4;
 	}
 }
 
