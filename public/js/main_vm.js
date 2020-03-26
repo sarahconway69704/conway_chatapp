@@ -4,10 +4,7 @@ import agegate from "./modules/agegate.js";
 
 const socket = io();
 
-  
-    Vue.component("modal", {
-        template: "#modal-template"
-      });
+
 
 
 // the packet is whatever data we send through with the connect event 
