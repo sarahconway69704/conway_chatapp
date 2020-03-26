@@ -58,6 +58,7 @@ npm install -g @vue/cli
 * [GSAP] - Animation
 * [Vue-Cli] - Animation
 * [Vue.js] - Javascript Framework
+* [socket.io] - Real-time Engine
 
 
 
