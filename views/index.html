@@ -7,7 +7,9 @@
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/vue"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
 
 <body>
@@ -23,12 +25,15 @@
 				<newmessage v-for="message in messages":msg="message"></newmessage>
 			</ul>
 		</section>
+
+		
 		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
+			<h2 id="chet">ChetRumé</h2>
+			<label for="nickname">Nickname (optional)</label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 		
 			<form>
-				<label for="message">Something to say?</label>
+				<label for="message">Spill the Tea, sis</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input @click.prevent="dispatchMessage" type="submit">
 			</form>
@@ -36,8 +41,10 @@
 
 		
 	</main>
+	
  	<script src="/socket.io/socket.io.js"></script>
 	<script type="module" src="js/main_vm.js"></script>
+
 </body>
 
 </html>

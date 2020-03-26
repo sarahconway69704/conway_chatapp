@@ -14,10 +14,11 @@
   
 
   .modal-content {
-    background-color: #fefefe;
+    background-color: #CBA4EB;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 10px;
     width: 80%; 
   }
 
@@ -26,5 +27,53 @@
     display: none;
 
   }
+
+  #eighteen
+  {
+    font-size: 30px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+  }
   
+  #yes
+  {
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 30px;
+    font-family: 'Baloo Chettan 2', cursive;
+    border-radius: 10px;
+    background-color: #E4DAFB;
+    color: #6384FF;
+    margin-left: 40px;
+    border: none;
+  }
  
+  #no
+  {
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 30px;
+    font-family: 'Baloo Chettan 2', cursive;
+    border-radius: 10px;
+    background-color: #E4DAFB;
+    color: #6384FF;
+    border: none;
+    
+  }
+
+  #yes:hover
+  {
+    background-color: #6384FF;
+    color:#E4DAFB;
+
+  }
+
+
+  #no:hover
+  {
+    background-color: #6384FF;
+    color:#E4DAFB;
+
+  }

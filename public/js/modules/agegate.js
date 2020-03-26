@@ -5,6 +5,7 @@ export default {
     template: `
 
     <div class="modal-content">
+    
       <p id="eighteen">Are you the age of 18 or over?</p>
     <p id="tooYoung" class="nope">You're not old enough to access this chat, kid. Go eat a fruit.</p>
       <button v-on:click="enter" type="button" id="yes">Yes</button>
